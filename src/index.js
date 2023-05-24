@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 //supaya bisa akses cookienya
 app.use(cookieParser());
-app.use(cors({ origin: ['http://localhost:3000', 'https://fabiramovie.vercel.app'], credentials: true }));
+app.use(cors({ origin: ['http://localhost:3000', 'https://fabiramovies.vercel.app'], credentials: true }));
 
 app.use('/', router);
 
